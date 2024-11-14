@@ -1,0 +1,15 @@
+python ./src/prober_mlp.py \
+    --data_path ./data/embeddings/llama-2-7b \
+    --output_path ./model/llama-2-7b_mlp \
+    --num_layers 32 \
+    --hidden_size 4096 \
+    --prober_dim 256 \
+    --cuda \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --epoch 4 \
+    --train_batch_size 32 \
+    --eval_batch_size 64 \
+    --print_interval 200 \
+    --shuffle \
+    --logscale_prediction 

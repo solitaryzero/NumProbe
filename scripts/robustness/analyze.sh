@@ -1,0 +1,11 @@
+python ./src/robustness/analysis.py \
+    --data_path ./data/embeddings/llama-2-7b_robust \
+    --format pdf \
+    --model_path ./model/llama-2-7b \
+    --output_path ./data/figures/llama-2-7b_robust \
+    --split test \
+    --penalty ridge \
+    --layer -1 \
+    --layer_count 32 \
+    --logscale_prediction \
+    --target a
